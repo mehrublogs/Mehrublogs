@@ -1,0 +1,305 @@
+/*
+Theme Name: Trueman School System
+Theme URI: https://example.com/trueman-school-system
+Author: Trueman School System
+Description: Custom WordPress theme for Trueman School System.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: trueman-school
+*/
+
+:root {
+    --primary-blue: #004aad;
+    --primary-dark: #00337a;
+    --accent-yellow: #ffc107;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+header {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.cta-btn {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.cta-btn:hover {
+    background-color: var(--primary-dark);
+    color: var(--accent-yellow);
+}
+
+.hero {
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
+}
+
+.hero-content .slogan {
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 5px solid var(--accent-yellow);
+}
+
+.affiliations {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.affiliations h3 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.affiliations p {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.campuses {
+    background-color: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.section-title .line {
+    width: 80px;
+    height: 4px;
+    background-color: var(--accent-yellow);
+    margin: 0 auto;
+}
+
+.campus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.campus-card {
+    background: var(--white);
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.campus-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-yellow);
+}
+
+.campus-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.campus-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.campus-card p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.contact-cta {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-cta h2 {
+    margin-bottom: 20px;
+}
+
+.phone-display {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-yellow);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col h4 {
+    color: var(--white);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+    color: var(--accent-yellow);
+}
+
+.copyright {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .campus-grid {
+        grid-template-columns: 1fr;
+    }
+}
